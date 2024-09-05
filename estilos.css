@@ -1,0 +1,20 @@
+p {
+    color: orange;
+}
+ul{
+    list-style-type: lower-greek;
+}
+.desafio1{
+    color: rgb(160, 164, 221);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#lista1{
+    color: blue;
+}
+#lista2{
+    color: blue;
+    background-color:rgb(196, 255, 181);
+    height: 80px;
+    width: 120px;
+    border-radius: 20px;
+}
