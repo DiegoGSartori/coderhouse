@@ -43,3 +43,11 @@ ul{
     overflow: hidden;
     border-style: dotted;
 }
+
+p {
+    display: inline;
+}
+
+span {
+    display: block;
+}
