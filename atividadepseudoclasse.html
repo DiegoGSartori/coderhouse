@@ -24,31 +24,49 @@
     }
 
     ul li:first-child {
-      color: red; /* Altera a cor do primeiro item da lista */
+      color: red;
       font-weight: bold;
     }
 
-    /* Pseudo-classe :last-child */
     ul li:last-child {
-      color: blue; /* Altera a cor do último item da lista */
+      color: blue;
       font-weight: bold;
     }
 
-    /* Pseudo-classe :nth-child(odd) */
     ul li:nth-child(odd) {
-      background-color: #f0f0f0; /* Aplica uma cor de fundo em itens ímpares */
+      background-color: #f0f0f0;
     }
 
-    /* Pseudo-classe :nth-child(3) */
     ul li:nth-child(3) {
-      background-color: yellow; /* Altera a cor de fundo do terceiro item */
+      background-color: yellow;
     }
 
-    /* Pseudo-classe :not(:first-child) */
     ul li:not(:first-child) {
-      font-style: italic; /* Aplica itálico a todos os itens, exceto o primeiro */
+      font-style: italic;
     }
-    
+
+        input[type="checkbox"]:checked,
+    input[type="radio"]:checked {
+      outline: 2px solid green;
+    }
+
+    input:disabled {
+      background-color: #f0f0f0;
+      color: #999;
+    }
+
+    input:valid {
+      border: 2px solid green;
+    }
+
+    input:invalid {
+      border: 2px solid red;
+    }
+
+    input:required {
+      border: 2px solid orange;
+    }
+
   </style>
 </head>
 <body>
@@ -77,6 +95,35 @@
     <li>Item 4</li>
     <li>Item 5 - Último</li>
   </ul>
+
+  <br><br>
+
+  <h1>Exemplo de Pseudo-classes com Formulários</h1>
+
+  <form>
+    <label for="subscribe">Deseja se inscrever?</label>
+    <input type="checkbox" id="subscribe" name="subscribe"> Sim
+    <br><br>
+
+    <label>Escolha uma opção:</label>
+    <input type="radio" name="option" value="1" required> Opção 1
+    <input type="radio" name="option" value="2" required> Opção 2
+    <br><br>
+
+    <label for="disabledInput">Campo desabilitado:</label>
+    <input type="text" id="disabledInput" value="Desabilitado" disabled>
+    <br><br>
+
+    <label for="email">Email (válido se incluir @):</label>
+    <input type="email" id="email" name="email" required placeholder="Digite seu email">
+    <br><br>
+
+    <label for="name">Nome (obrigatório):</label>
+    <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+    <br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
 
 </body>
 </html>
