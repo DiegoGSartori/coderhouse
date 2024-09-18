@@ -1,53 +1,72 @@
-p {
-    color: orange;
-}
-ul{
-    list-style-type: lower-greek;
-}
-.desafio1{
-    color: rgb(160, 164, 221);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-#lista1{
-    color: blue;
-}
-#lista2{
-    color: blue;
-    background-color:rgb(196, 255, 181);
-    height: 80px;
-    width: 120px;
-    border-radius: 20px;
-}
+a:hover {
+    color: red;
+  }
 
-.atividadeoverflow {
-    border: solid 1px black;
-    display: inline-block;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 170px;
-    height: 80px;
-    padding: 5px 10px 12px 3px;
-    margin-bottom: 100px;
-}
+  a:visited {
+    color: purple;
+  }
 
-.atividade2 {
-    border: solid 3px black;
-    border-radius: 10px;
-    display: inline-block;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
+  button:active {
+    background-color: blue;
+    color: white;
+  }
+
+  input:focus {
+    border: 2px solid green;
+    outline: none;
+  }
+
+  ul li:first-child {
+    color: red;
+    font-weight: bold;
+  }
+
+  ul li:last-child {
+    color: blue;
+    font-weight: bold;
+  }
+
+  ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+
+  ul li:nth-child(3) {
+    background-color: yellow;
+  }
+
+  ul li:not(:first-child) {
+    font-style: italic;
+  }
+
+      input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    outline: 2px solid green;
+  }
+
+  input:disabled {
+    background-color: #f0f0f0;
+    color: #999;
+  }
+
+  input:valid {
+    border: 2px solid green;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input:required {
+    border: 2px solid orange;
+  }
+
+div {
     height: 100px;
-    width: 50px;
-    padding: 6px 9px 6px 9px;
-    margin: 5px 8px 5px 8px;
-    overflow: hidden;
-    border-style: dotted;
+    width: 100px;
+    background-image: linear-gradient(15deg, rgb(252, 165, 108), red);
+    transform: skew(2deg, 5deg);
 }
 
-p {
-    display: inline;
-}
-
-span {
-    display: block;
+body {
+    background-image: linear-gradient(15deg, rgb(190, 190, 190), rgb(255, 255, 255));
 }
