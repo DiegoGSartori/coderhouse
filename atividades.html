@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="atividade prática de HTML semântico, para o curso de HTML e CSS da CODERHOUSE">
     <meta name="Keywords" content="prática, HTML, curso, coderhouse, semântica">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Atividade de HTML</title>
 </head>
-<body>
+<body class="container">
     <header id="Cabeçalho">
         <h1>Atividade de HTML</h1>
         <h2>Por: Diego G. Sartori</h2>
@@ -42,29 +42,34 @@
             <ol>7. Deixe esfriar e desenforme.</ol>
         </ul>
     </section>
-    <section id="tabela">
+    <section class="table table-striped">
         <table>
             <tr>
-                <th><Strong>Produto</Strong></th>
-                <th><Strong>Preço Unitário</Strong></th>
-                <th><Strong>Quantidade em estoque</Strong></th>
+                <th scope="col">#</th>
+                <th scope="col"><Strong>Produto</Strong></th>
+                <th scope="col"><Strong>Preço Unitário</Strong></th>
+                <th scope="col"><Strong>Quantidade em estoque</Strong></th>
             </tr>
             <tr>
+                <th scope="row">1</th>
                 <td>HD SATA 80 GB</td>
                 <td>R$ 85,00</td>
                 <td>35</td>
             </tr>
             <tr>
+                <th scope="row">2</th>
                 <td>Pen Drive 2 GB</td>
                 <td>R$ 15,00</td>
                 <td>150</td>
             </tr>
             <tr>
+                <th scope="row">3</th>
                 <td>Impressora Laser Colorida</td>
                 <td>R$ 613,99</td>
                 <td>18</td>
             </tr>
             <tr>
+                <th scope="row">4</th>
                 <td>Monitor LCD 17'</td>
                 <td>R$ 309,00</td>
                 <td>41</td>
